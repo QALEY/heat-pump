@@ -152,7 +152,7 @@ def main():
             OBJ_TYPE: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_object_type)],
             TOTAL_SQ: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_total_square)],
             ROOM_DIM: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_room_dim)],
-            MEDIA: [MessageHandler(filters.PHOTO | filters.VIDEO | filters.VOICE | filters.DOCUMENT, get_media)],
+            MEDIA: [MessageHandler(filters.PHOTO | filters.VIDEO | filters.VOICE | filters.Document.ALL, get_media)],
             PHONE: [MessageHandler(filters.CONTACT | filters.TEXT, get_phone)],
         },
         fallbacks=[CommandHandler('cancel', cancel)]
