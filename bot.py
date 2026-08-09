@@ -141,7 +141,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return ConversationHandler.END
 
 def main():
-    TOKEN = os.getenv("TELEGRAM_TOKEN", "8708941384:AAGKPSq3auy38_wBjiEqCogq52-2Tn0NPew")
+    TOKEN = os.getenv("TELEGRAM_TOKEN", "ВСТАВЬТЕ_ТОКЕН_БОТА_ЗДЕСЬ")
     
     app = ApplicationBuilder().token(TOKEN).build()
     
