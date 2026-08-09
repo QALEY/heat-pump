@@ -159,7 +159,7 @@ def main():
     )
     
     app.add_handler(conv_handler)
-    app.print_and_error_handler()
+    # app.print_and_error_handler()
     app.run_polling()
 
 if __name__ == '__main__':
